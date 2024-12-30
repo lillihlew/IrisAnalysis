@@ -1,0 +1,3 @@
+check w no arguments
+check w wrong first argument
+check w wrong secong argument

@@ -1,0 +1,279 @@
+Script started on 2023-05-11 17:15:39-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h postel iris$./iris r[Kiris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+0
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+-9
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+13
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+2000
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+3 4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+6
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt [C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+0
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+7
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+-13
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+4
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+-11
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+0.001
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1.90
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+Error: improper input. Please try again
+[?2004h postel iris$exit
+[?2004lexit
+
+Script done on 2023-05-11 17:17:38-05:00 [COMMAND_EXIT_CODE="1"]

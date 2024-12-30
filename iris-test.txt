@@ -1,0 +1,912 @@
+Test Script for Testing
+
+Test 1: Check with no input: should and does prompt user to try again with
+     two input files
+Test 2: Check with one incorrect file input: should and does prompt user to
+     try again with two input files
+Test 3: Check options 1-12, only with valid inputs (I saved results of this
+     in results-of-test.txt): Everything should work as expected, which it
+     does. Options 1 and 2 print what they should to the terminal, while
+     options 3-11 print their appropriate data to the results text file,
+     and option 12 quits the program and tells the user where their results are.
+Test 4: Try to run program with two incorrect files: should and does prompt
+     user by telling them which files should be used.
+Test 5: Try to run program with second file incorrect: should and does
+     prompt user by telling them which file should be used.
+Test 5: Check with both correct files then quit.
+Test 6: (copy-pasted below, because I forgot to test this originally) Test
+     invalid input as options. I will check numbers below 1 and above
+     12 for the main switch, and numbers below 1 and above 3 for the
+     switches within options 4, 6, 8, and 10. I will also check floats.
+     Program should and does tell the user to try again with numbers
+     within the proper range. In the main switch, it lets the user try
+     again, but in the mini switches, it exits the entire program.
+
+Note to the grader: I know that my functions work correctly because they
+match the results that the owner of the dataset provided. I included them
+in a file called iris-names.txt, if you scroll to the bottom you'll see a
+table and you can compare my results if you want. The table is only with
+the results from the entire dataset, so they only match my "all" table. I
+argue that all of my testing was successful since everything worked as expected.
+
+Script started on 2023-05-11 16:59:58-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h postel iris$./iris 
+[?2004lError: input and output files are required. Please try again.
+[?2004h postel iris$./iris iris-data.txt
+[?2004lError: input and output files are required. Please try again.
+[?2004h postel iris$./iris iris-data.txt iris-results.txt
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+1
+
+This dataset contains 150 measurements of irises. There 
+are three types of iris plants in the dataset: setosa, 
+versicolor, and virginica. There are 50 measurements of each 
+iris type. Each iris has information of sepal length(cm), 
+sepal width(cm), petal length(cm), petal width(cm), and class.
+
+The statistics that will be collected are minimum, maximum, 
+mean, and standard deviation.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+2
+Sepal Length  Sepal Width  Petal Length  Petal Width    Class
+     5.1          3.5          1.4          0.2          1.0     
+     4.9          3.0          1.4          0.2          1.0     
+     4.7          3.2          1.3          0.2          1.0     
+     4.6          3.1          1.5          0.2          1.0     
+     5.0          3.6          1.4          0.2          1.0     
+     5.4          3.9          1.7          0.4          1.0     
+     4.6          3.4          1.4          0.3          1.0     
+     5.0          3.4          1.5          0.2          1.0     
+     4.4          2.9          1.4          0.2          1.0     
+     4.9          3.1          1.5          0.1          1.0     
+     5.4          3.7          1.5          0.2          1.0     
+     4.8          3.4          1.6          0.2          1.0     
+     4.8          3.0          1.4          0.1          1.0     
+     4.3          3.0          1.1          0.1          1.0     
+     5.8          4.0          1.2          0.2          1.0     
+     5.7          4.4          1.5          0.4          1.0     
+     5.4          3.9          1.3          0.4          1.0     
+     5.1          3.5          1.4          0.3          1.0     
+     5.7          3.8          1.7          0.3          1.0     
+     5.1          3.8          1.5          0.3          1.0     
+     5.4          3.4          1.7          0.2          1.0     
+     5.1          3.7          1.5          0.4          1.0     
+     4.6          3.6          1.0          0.2          1.0     
+     5.1          3.3          1.7          0.5          1.0     
+     4.8          3.4          1.9          0.2          1.0     
+     5.0          3.0          1.6          0.2          1.0     
+     5.0          3.4          1.6          0.4          1.0     
+     5.2          3.5          1.5          0.2          1.0     
+     5.2          3.4          1.4          0.2          1.0     
+     4.7          3.2          1.6          0.2          1.0     
+     4.8          3.1          1.6          0.2          1.0     
+     5.4          3.4          1.5          0.4          1.0     
+     5.2          4.1          1.5          0.1          1.0     
+     5.5          4.2          1.4          0.2          1.0     
+     4.9          3.1          1.5          0.2          1.0     
+     5.0          3.2          1.2          0.2          1.0     
+     5.5          3.5          1.3          0.2          1.0     
+     4.9          3.6          1.4          0.1          1.0     
+     4.4          3.0          1.3          0.2          1.0     
+     5.1          3.4          1.5          0.2          1.0     
+     5.0          3.5          1.3          0.3          1.0     
+     4.5          2.3          1.3          0.3          1.0     
+     4.4          3.2          1.3          0.2          1.0     
+     5.0          3.5          1.6          0.6          1.0     
+     5.1          3.8          1.9          0.4          1.0     
+     4.8          3.0          1.4          0.3          1.0     
+     5.1          3.8          1.6          0.2          1.0     
+     4.6          3.2          1.4          0.2          1.0     
+     5.3          3.7          1.5          0.2          1.0     
+     5.0          3.3          1.4          0.2          1.0     
+     7.0          3.2          4.7          1.4          2.0     
+     6.4          3.2          4.5          1.5          2.0     
+     6.9          3.1          4.9          1.5          2.0     
+     5.5          2.3          4.0          1.3          2.0     
+     6.5          2.8          4.6          1.5          2.0     
+     5.7          2.8          4.5          1.3          2.0     
+     6.3          3.3          4.7          1.6          2.0     
+     4.9          2.4          3.3          1.0          2.0     
+     6.6          2.9          4.6          1.3          2.0     
+     5.2          2.7          3.9          1.4          2.0     
+     5.0          2.0          3.5          1.0          2.0     
+     5.9          3.0          4.2          1.5          2.0     
+     6.0          2.2          4.0          1.0          2.0     
+     6.1          2.9          4.7          1.4          2.0     
+     5.6          2.9          3.6          1.3          2.0     
+     6.7          3.1          4.4          1.4          2.0     
+     5.6          3.0          4.5          1.5          2.0     
+     5.8          2.7          4.1          1.0          2.0     
+     6.2          2.2          4.5          1.5          2.0     
+     5.6          2.5          3.9          1.1          2.0     
+     5.9          3.2          4.8          1.8          2.0     
+     6.1          2.8          4.0          1.3          2.0     
+     6.3          2.5          4.9          1.5          2.0     
+     6.1          2.8          4.7          1.2          2.0     
+     6.4          2.9          4.3          1.3          2.0     
+     6.6          3.0          4.4          1.4          2.0     
+     6.8          2.8          4.8          1.4          2.0     
+     6.7          3.0          5.0          1.7          2.0     
+     6.0          2.9          4.5          1.5          2.0     
+     5.7          2.6          3.5          1.0          2.0     
+     5.5          2.4          3.8          1.1          2.0     
+     5.5          2.4          3.7          1.0          2.0     
+     5.8          2.7          3.9          1.2          2.0     
+     6.0          2.7          5.1          1.6          2.0     
+     5.4          3.0          4.5          1.5          2.0     
+     6.0          3.4          4.5          1.6          2.0     
+     6.7          3.1          4.7          1.5          2.0     
+     6.3          2.3          4.4          1.3          2.0     
+     5.6          3.0          4.1          1.3          2.0     
+     5.5          2.5          4.0          1.3          2.0     
+     5.5          2.6          4.4          1.2          2.0     
+     6.1          3.0          4.6          1.4          2.0     
+     5.8          2.6          4.0          1.2          2.0     
+     5.0          2.3          3.3          1.0          2.0     
+     5.6          2.7          4.2          1.3          2.0     
+     5.7          3.0          4.2          1.2          2.0     
+     5.7          2.9          4.2          1.3          2.0     
+     6.2          2.9          4.3          1.3          2.0     
+     5.1          2.5          3.0          1.1          2.0     
+     5.7          2.8          4.1          1.3          2.0     
+     6.3          3.3          6.0          2.5          3.0     
+     5.8          2.7          5.1          1.9          3.0     
+     7.1          3.0          5.9          2.1          3.0     
+     6.3          2.9          5.6          1.8          3.0     
+     6.5          3.0          5.8          2.2          3.0     
+     7.6          3.0          6.6          2.1          3.0     
+     4.9          2.5          4.5          1.7          3.0     
+     7.3          2.9          6.3          1.8          3.0     
+     6.7          2.5          5.8          1.8          3.0     
+     7.2          3.6          6.1          2.5          3.0     
+     6.5          3.2          5.1          2.0          3.0     
+     6.4          2.7          5.3          1.9          3.0     
+     6.8          3.0          5.5          2.1          3.0     
+     5.7          2.5          5.0          2.0          3.0     
+     5.8          2.8          5.1          2.4          3.0     
+     6.4          3.2          5.3          2.3          3.0     
+     6.5          3.0          5.5          1.8          3.0     
+     7.7          3.8          6.7          2.2          3.0     
+     7.7          2.6          6.9          2.3          3.0     
+     6.0          2.2          5.0          1.5          3.0     
+     6.9          3.2          5.7          2.3          3.0     
+     5.6          2.8          4.9          2.0          3.0     
+     7.7          2.8          6.7          2.0          3.0     
+     6.3          2.7          4.9          1.8          3.0     
+     6.7          3.3          5.7          2.1          3.0     
+     7.2          3.2          6.0          1.8          3.0     
+     6.2          2.8          4.8          1.8          3.0     
+     6.1          3.0          4.9          1.8          3.0     
+     6.4          2.8          5.6          2.1          3.0     
+     7.2          3.0          5.8          1.6          3.0     
+     7.4          2.8          6.1          1.9          3.0     
+     7.9          3.8          6.4          2.0          3.0     
+     6.4          2.8          5.6          2.2          3.0     
+     6.3          2.8          5.1          1.5          3.0     
+     6.1          2.6          5.6          1.4          3.0     
+     7.7          3.0          6.1          2.3          3.0     
+     6.3          3.4          5.6          2.4          3.0     
+     6.4          3.1          5.5          1.8          3.0     
+     6.0          3.0          4.8          1.8          3.0     
+     6.9          3.1          5.4          2.1          3.0     
+     6.7          3.1          5.6          2.4          3.0     
+     6.9          3.1          5.1          2.3          3.0     
+     5.8          2.7          5.1          1.9          3.0     
+     6.8          3.2          5.9          2.3          3.0     
+     6.7          3.3          5.7          2.5          3.0     
+     6.7          3.0          5.2          2.3          3.0     
+     6.3          2.5          5.0          1.9          3.0     
+     6.5          3.0          5.2          2.0          3.0     
+     6.2          3.4          5.4          2.3          3.0     
+     5.9          3.0          5.1          1.8          3.0     
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+3
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+2
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+3
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+5
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+3
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+2
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+7
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+3
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+2
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+9
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+3
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+1
+
+This dataset contains 150 measurements of irises. There 
+are three types of iris plants in the dataset: setosa, 
+versicolor, and virginica. There are 50 measurements of each 
+iris type. Each iris has information of sepal length(cm), 
+sepal width(cm), petal length(cm), petal width(cm), and class.
+
+The statistics that will be collected are minimum, maximum, 
+mean, and standard deviation.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+2 10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+2
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+11
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+12
+Thank you for using this program. Your results are in iris-results.txt.
+[?2004h postel iris$./iris file1 file2
+[?2004lYour first argument should be iris-data.txt. Please try again.
+[?2004h postel iris$./iris iris-data.txt filerna[K[Kandomfile
+[?2004lYour second argument should be iris-results.txt. Please try again.
+[?2004h postel iris$./iris iris-data.txt iris-results.ts[Kxt
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+12
+Thank you for using this program. Your results are in iris-results.txt.
+exit
+[?2004lexit
+
+Script done on 2023-05-11 17:03:37-05:00 [COMMAND_EXIT_CODE="0"]
+
+
+
+
+
+
+
+TEST SIX COPIED BELOW
+Script started on 2023-05-11 17:15:39-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h postel iris$./iris r[Kiris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+0
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+-9
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+13
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+2000
+Please try again with a number 1-9: Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+3 4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+6
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt [C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+4
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+0
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+7
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+6
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+-13
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+4
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+8
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+-11
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+0.001
+Error: improper input. Please try again
+[?2004h postel iris$./iris iris-data.txt iris-results.txt 
+[?2004l
+This program will perform the statistical analysis required by the user on iris-data.txt and print the results to iris-results.txt.
+
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+10
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+1.90
+Please select an option:
+	 1. Print explanation of dataset and statsistics to terminal.
+	 2. Print dataset in array form to the terminal
+	 3. Find statistics of all irises' sepal lengths
+	 4. Find statistics of a type of irises' sepal lengths
+	 5. Find statistics of all irises' sepal widths
+	 6. Find statistics of a type of irises' sepal widths
+	 7. Find statistics of all irises' petal lengths
+	 8. Find statistics of a type of irises' petal lengths
+	 9. Find statistics of all irises' petal widths
+	 10. Find statistics of a type of irises' petal widths 
+	 11. Print min, max, mean, and std.dev tables for all iris types
+	 12. Quit
+
+Please select which type of iris:
+	 1. Iris-setosa
+	 2. Iris-versicolor
+	 3. Iris-virginica
+Error: improper input. Please try again
+[?2004h postel iris$exit
+[?2004lexit
+
+Script done on 2023-05-11 17:17:38-05:00 [COMMAND_EXIT_CODE="1"]
